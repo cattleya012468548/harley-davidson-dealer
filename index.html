@@ -1,240 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harley Davidson Dealer - Premium Motorcycles</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">🏍️ HARLEY DAVIDSON</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#inventory">Inventory</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harley Davidson Dealer</title>
+    <meta
+      name="description"
+      content="Harley Davidson dealer website featuring premium motorcycles, financing, service, and showroom inventory."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <span>Premium Harley-Davidson Motorcycles</span>
+        <span>Call 1-800-HARLEY-1</span>
+      </div>
+    </header>
+
+    <nav class="site-nav">
+      <div class="container nav-inner">
+        <div class="brand" aria-label="Harley Davidson home">
+          <span class="brand-mark"></span>
+          <span>Harley Davidson</span>
         </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>RIDE THE LEGEND</h1>
-            <p>Premium Harley-Davidson Motorcycles</p>
-            <button class="cta-btn" onclick="scrollToSection('inventory')">View Inventory</button>
-        </div>
-        <div class="hero-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23000000' width='400' height='300'/%3E%3Ccircle cx='100' cy='200' r='40' fill='%23EEEEEE'/%3E%3Ccircle cx='300' cy='200' r='40' fill='%23EEEEEE'/%3E%3Crect x='80' y='140' width='240' height='60' fill='%23CF0A0A' rx='10'/%3E%3Crect x='70' y='160' width='260' height='20' fill='%23DC5F00'/%3E%3Ctext x='200' y='175' font-size='24' fill='%23EEEEEE' text-anchor='middle' font-weight='bold'%3EHARLEY DAVIDSON%3C/text%3E%3C/svg%3E" alt="Harley Davidson Motorcycle">
-        </div>
-    </section>
-
-    <!-- Inventory Section -->
-    <section id="inventory" class="inventory">
-        <div class="container">
-            <h2>Our Inventory</h2>
-            <div class="bikes-grid">
-                <!-- Bike 1 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='80' cy='140' r='30' fill='%23000000'/>
-                            <circle cx='80' cy='140' r='25' fill='%23333333'/>
-                            <circle cx='220' cy='140' r='30' fill='%23000000'/>
-                            <circle cx='220' cy='140' r='25' fill='%23333333'/>
-                            <path d='M 100 100 Q 150 60 200 100' stroke='%23CF0A0A' stroke-width='8' fill='none'/>
-                            <rect x='85' y='110' width='130' height='30' fill='%23CF0A0A' rx='5'/>
-                            <text x='150' y='130' font-size='12' text-anchor='middle' fill='%23EEEEEE' font-weight='bold'>STREET 750</text>
-                        </svg>
-                    </div>
-                    <h3>Street 750</h3>
-                    <p>Perfect for beginners. Lightweight and agile with classic Harley styling.</p>
-                    <span class="price">$7,299</span>
-                    <button class="bike-btn" onclick="selectBike('Street 750')">Learn More</button>
-                </div>
-
-                <!-- Bike 2 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='70' cy='150' r='35' fill='%23000000'/>
-                            <circle cx='70' cy='150' r='30' fill='%23333333'/>
-                            <circle cx='230' cy='150' r='35' fill='%23000000'/>
-                            <circle cx='230' cy='150' r='30' fill='%23333333'/>
-                            <path d='M 90 80 Q 150 40 210 90' stroke='%23DC5F00' stroke-width='10' fill='none'/>
-                            <rect x='75' y='100' width='150' height='40' fill='%23DC5F00' rx='5'/>
-                            <text x='150' y='125' font-size='12' text-anchor='middle' fill='%23000000' font-weight='bold'>ROADSTER</text>
-                        </svg>
-                    </div>
-                    <h3>Roadster</h3>
-                    <p>Raw power meets nimble handling. The ultimate stripped-down experience.</p>
-                    <span class="price">$8,549</span>
-                    <button class="bike-btn" onclick="selectBike('Roadster')">Learn More</button>
-                </div>
-
-                <!-- Bike 3 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='60' cy='140' r='40' fill='%23000000'/>
-                            <circle cx='60' cy='140' r='35' fill='%23333333'/>
-                            <circle cx='240' cy='140' r='40' fill='%23000000'/>
-                            <circle cx='240' cy='140' r='35' fill='%23333333'/>
-                            <path d='M 85 70 Q 150 30 215 75' stroke='%23CF0A0A' stroke-width='12' fill='none'/>
-                            <rect x='70' y='90' width='160' height='50' fill='%23CF0A0A' rx='5'/>
-                            <text x='150' y='120' font-size='12' text-anchor='middle' fill='%23EEEEEE' font-weight='bold'>FAT BOY</text>
-                        </svg>
-                    </div>
-                    <h3>Fat Boy</h3>
-                    <p>Iconic cruiser with massive presence. Built for cruising and turning heads.</p>
-                    <span class="price">$17,699</span>
-                    <button class="bike-btn" onclick="selectBike('Fat Boy')">Learn More</button>
-                </div>
-
-                <!-- Bike 4 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='75' cy='145' r='38' fill='%23000000'/>
-                            <circle cx='75' cy='145' r='32' fill='%23333333'/>
-                            <circle cx='225' cy='145' r='38' fill='%23000000'/>
-                            <circle cx='225' cy='145' r='32' fill='%23333333'/>
-                            <path d='M 100 65 Q 150 35 210 70' stroke='%23DC5F00' stroke-width='11' fill='none'/>
-                            <rect x='80' y='85' width='140' height='45' fill='%23DC5F00' rx='5'/>
-                            <polygon points='150,85 155,65 160,85' fill='%23DC5F00'/>
-                            <text x='150' y='115' font-size='12' text-anchor='middle' fill='%23EEEEEE' font-weight='bold'>SPORTSTER</text>
-                        </svg>
-                    </div>
-                    <h3>Sportster S</h3>
-                    <p>High-performance power with modern technology and aggressive styling.</p>
-                    <span class="price">$10,799</span>
-                    <button class="bike-btn" onclick="selectBike('Sportster S')">Learn More</button>
-                </div>
-
-                <!-- Bike 5 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='65' cy='135' r='42' fill='%23000000'/>
-                            <circle cx='65' cy='135' r='36' fill='%23333333'/>
-                            <circle cx='235' cy='135' r='42' fill='%23000000'/>
-                            <circle cx='235' cy='135' r='36' fill='%23333333'/>
-                            <path d='M 90 50 Q 150 20 220 60' stroke='%23CF0A0A' stroke-width='13' fill='none'/>
-                            <rect x='75' y='70' width='150' height='55' fill='%23CF0A0A' rx='5'/>
-                            <rect x='100' y='55' width='100' height='20' fill='%23DC5F00' rx='3'/>
-                            <text x='150' y='105' font-size='11' text-anchor='middle' fill='%23EEEEEE' font-weight='bold'>STREET GLIDE</text>
-                        </svg>
-                    </div>
-                    <h3>Street Glide</h3>
-                    <p>Luxury touring bike with advanced features and maximum comfort.</p>
-                    <span class="price">$24,499</span>
-                    <button class="bike-btn" onclick="selectBike('Street Glide')">Learn More</button>
-                </div>
-
-                <!-- Bike 6 -->
-                <div class="bike-card">
-                    <div class="bike-image">
-                        <svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'>
-                            <rect fill='%23F5F5F5' width='300' height='200'/>
-                            <circle cx='70' cy='140' r='39' fill='%23000000'/>
-                            <circle cx='70' cy='140' r='33' fill='%23333333'/>
-                            <circle cx='230' cy='140' r='39' fill='%23000000'/>
-                            <circle cx='230' cy='140' r='33' fill='%23333333'/>
-                            <path d='M 95 60 Q 150 25 215 65' stroke='%23DC5F00' stroke-width='12' fill='none'/>
-                            <rect x='80' y='80' width='140' height='50' fill='%23DC5F00' rx='5'/>
-                            <polygon points='150,80 160,50 170,80' fill='%23DC5F00'/>
-                            <text x='150' y='112' font-size='11' text-anchor='middle' fill='%23000000' font-weight='bold'>CVO LIMITED</text>
-                        </svg>
-                    </div>
-                    <h3>CVO Limited</h3>
-                    <p>Ultra-premium custom bike with exclusive features and limited production.</p>
-                    <span class="price">$45,999</span>
-                    <button class="bike-btn" onclick="selectBike('CVO Limited')">Learn More</button>
-                </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">The legend is waiting</p>
+            <h1>Ride the Legend</h1>
+            <p class="hero-text">
+              Discover powerful Harley-Davidson motorcycles built for freedom,
+              style, and unforgettable road trips.
+            </p>
+            <div class="cta-group">
+              <button class="btn btn-primary" data-scroll-target="#inventory">
+                View Inventory
+              </button>
+              <button class="btn btn-secondary" data-scroll-target="#contact">
+                Book a Test Ride
+              </button>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <h2>About Our Dealership</h2>
-                <p>Welcome to your premier Harley-Davidson destination. Since our opening, we've been committed to delivering world-class service, authentic motorcycles, and an unforgettable riding community experience.</p>
-                <div class="about-features">
-                    <div class="feature">
-                        <span class="feature-icon">🔧</span>
-                        <h4>Expert Service</h4>
-                        <p>Professional maintenance and customization by certified technicians</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">🎯</span>
-                        <h4>Wide Selection</h4>
-                        <p>New and pre-owned models with flexible financing options</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">👥</span>
-                        <h4>Community</h4>
-                        <p>Join our passionate riders community and exclusive events</p>
-                    </div>
-                </div>
+          <div class="hero-panel">
+            <div class="hero-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson motorcycle in the street"
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Address:</strong> 123 Harley Lane, Motor City, USA</p>
-                    <p><strong>Phone:</strong> 1-800-HARLEY-1</p>
-                    <p><strong>Email:</strong> sales@harleydealer.com</p>
-                    <p><strong>Hours:</strong></p>
-                    <ul>
-                        <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
-                        <li>Saturday: 10:00 AM - 4:00 PM</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
+            <div class="hero-panel-info">
+              <span class="panel-label">Featured model</span>
+              <h2>Fat Boy</h2>
+              <div class="panel-row">
+                <div>
+                  <strong>117</strong>
+                  <span>HP</span>
                 </div>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="tel" placeholder="Your Phone">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                <div>
+                  <strong>3.7s</strong>
+                  <span>0-60</span>
+                </div>
+                <div>
+                  <strong>$17,699</strong>
+                  <span>Starting</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+      <section class="inventory section" id="inventory">
         <div class="container">
-            <p>&copy; 2024 Harley-Davidson Dealer. All rights reserved. | Ride Safe. Ride Hard. Ride Harley.</p>
+          <div class="section-header">
+            <p class="eyebrow dark">Our inventory</p>
+            <h2>Choose your next ride</h2>
+          </div>
+
+          <div class="bike-grid">
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson Street 750 motorcycle"
+              />
+              <div class="bike-body">
+                <h3>Street 750</h3>
+                <p>
+                  Agile and iconic, built for daily thrills and weekend freedom.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$7,299</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson Roadster motorcycle"
+              />
+              <div class="bike-body">
+                <h3>Roadster</h3>
+                <p>
+                  A bold blend of power and control with unmistakable Harley attitude.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$8,549</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1572978336369-6f7d2f679e15?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson Fat Boy motorcycle"
+              />
+              <div class="bike-body">
+                <h3>Fat Boy</h3>
+                <p>
+                  Legendary design with a stance that turns every ride into a statement.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$17,699</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson Sportster motorcycle"
+              />
+              <div class="bike-body">
+                <h3>Sportster S</h3>
+                <p>
+                  High-performance power with modern engineering and classic soul.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$10,799</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson touring motorcycle"
+              />
+              <div class="bike-body">
+                <h3>Street Glide</h3>
+                <p>
+                  Touring comfort meets power, style, and technology in one machine.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$24,499</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="bike-card">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                alt="Harley Davidson cruiser motorcycle"
+              />
+              <div class="bike-body">
+                <h3>CVO Limited</h3>
+                <p>
+                  Premium craftsmanship and a commanding presence for the boldest riders.
+                </p>
+                <div class="bike-meta">
+                  <span class="price">$45,999</span>
+                  <button class="mini-btn">Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="palette-wrap" aria-label="Brand colors">
+            <div class="swatch">
+              <div class="color-chip black"></div>
+              <span>#000000</span>
+            </div>
+            <div class="swatch">
+              <div class="color-chip red"></div>
+              <span>#CF0A0A</span>
+            </div>
+            <div class="swatch">
+              <div class="color-chip orange"></div>
+              <span>#DC5F00</span>
+            </div>
+            <div class="swatch">
+              <div class="color-chip white"></div>
+              <span>#EEEEEE</span>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow light">About us</p>
+            <h2>Built for riders who live the dream.</h2>
+            <p>
+              We bring together performance, craftsmanship, and the unmistakable spirit of Harley-Davidson. From new arrivals to certified pre-owned models, our team is here to help you choose the ride that fits your life.
+            </p>
+            <p>
+              Whether you're buying your first bike or upgrading your dream machine, our experts provide financing support, custom guidance, and service that keeps you riding with confidence.
+            </p>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">🔧</div>
+              <h3>Expert Service</h3>
+              <p>Certified technicians and premium maintenance care.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🏍️</div>
+              <h3>Premium Selection</h3>
+              <p>New and pre-owned models for every riding style.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h3>Trusted Support</h3>
+              <p>Friendly guidance from first inquiry to final ride-out.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow dark">Contact</p>
+            <h2>Get in touch</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-panel">
+              <h3>Visit our showroom</h3>
+              <p><strong>Address:</strong> 123 Harley Lane, Motor City, USA</p>
+              <p><strong>Phone:</strong> 1-800-HARLEY-1</p>
+              <p><strong>Email:</strong> sales@harleydealer.com</p>
+              <ul>
+                <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+                <li>Sat: 10:00 AM - 4:00 PM</li>
+                <li>Sun: Closed</li>
+              </ul>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <input type="tel" name="phone" placeholder="Your Phone" />
+              <textarea name="message" placeholder="Tell us what you're looking for..." required></textarea>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2024 Harley-Davidson Dealer. Ride Safe. Ride Loud.</p>
+      </div>
     </footer>
 
-    <!-- Modal for Bike Details -->
-    <div id="bikeModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <button class="cta-btn" onclick="contactDealer()">Contact Dealer</button>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
